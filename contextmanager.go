@@ -6,7 +6,7 @@ import (
 	"github.com/grailbio/go-dicom"
 	"github.com/grailbio/go-dicom/dicomlog"
 	"github.com/grailbio/go-dicom/dicomuid"
-	"github.com/grailbio/go-netdicom/pdu"
+	"github.com/NikolaiKovalenko/go-netdicom/pdu"
 )
 
 type contextManagerEntry struct {

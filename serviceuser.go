@@ -14,7 +14,7 @@ import (
 	"github.com/grailbio/go-dicom/dicomlog"
 	"github.com/grailbio/go-dicom/dicomtag"
 	"github.com/grailbio/go-dicom/dicomuid"
-	"github.com/grailbio/go-netdicom/dimse"
+	"github.com/NikolaiKovalenko/go-netdicom/dimse"
 )
 
 type serviceUserStatus int
