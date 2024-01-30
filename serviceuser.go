@@ -9,12 +9,12 @@ import (
 	"net"
 	"sync"
 
+	"github.com/NikolaiKovalenko/go-netdicom/dimse"
 	"github.com/grailbio/go-dicom"
 	"github.com/grailbio/go-dicom/dicomio"
 	"github.com/grailbio/go-dicom/dicomlog"
 	"github.com/grailbio/go-dicom/dicomtag"
 	"github.com/grailbio/go-dicom/dicomuid"
-	"github.com/NikolaiKovalenko/go-netdicom/dimse"
 )
 
 type serviceUserStatus int
@@ -27,14 +27,14 @@ const (
 
 // ServiceUser encapsulates implements the client side of DICOM network protocol.
 //
-//  user, err := netdicom.NewServiceUser(netdicom.ServiceUserParams{SOPClasses: sopclass.QRFindClasses})
-//  // Connect to server 1.2.3.4, port 8888
-//  user.Connect("1.2.3.4:8888")
-//  // Send test.dcm to the server
-//  ds, err := dicom.ReadDataSetFromFile("test.dcm", dicom.ReadOptions{})
-//  err := user.CStore(ds)
-//  // Disconnect
-//  user.Release()
+//	user, err := netdicom.NewServiceUser(netdicom.ServiceUserParams{SOPClasses: sopclass.QRFindClasses})
+//	// Connect to server 1.2.3.4, port 8888
+//	user.Connect("1.2.3.4:8888")
+//	// Send test.dcm to the server
+//	ds, err := dicom.ReadDataSetFromFile("test.dcm", dicom.ReadOptions{})
+//	err := user.CStore(ds)
+//	// Disconnect
+//	user.Release()
 //
 // The ServiceUser class is thread compatible. That is, you cannot call C*
 // methods - say CStore and CFind requests - concurrently from two goroutines.
@@ -93,6 +93,9 @@ func validateServiceUserParams(params *ServiceUserParams) error {
 			canonicalUID, err := dicomio.CanonicalTransferSyntaxUID(uid)
 			if err != nil {
 				return err
+			}
+			if uid != canonicalUID && uid != "" {
+				canonicalUID = uid
 			}
 			params.TransferSyntaxes[i] = canonicalUID
 		}
