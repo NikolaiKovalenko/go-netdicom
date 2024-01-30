@@ -1,4 +1,4 @@
-module github.com/NikolaiKovalenko/go-netdicom
+module github.com/NikolaiKovalenko/go-netdicom/v2
 
 go 1.16
 
