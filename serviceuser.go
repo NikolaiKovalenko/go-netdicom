@@ -9,7 +9,7 @@ import (
 	"net"
 	"sync"
 
-	"github.com/NikolaiKovalenko/go-netdicom/dimse"
+	"github.com/NikolaiKovalenko/go-netdicom/v2/dimse"
 	"github.com/grailbio/go-dicom"
 	"github.com/grailbio/go-dicom/dicomio"
 	"github.com/grailbio/go-dicom/dicomlog"
