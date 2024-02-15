@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"testing"
 
-	"github.com/grailbio/go-dicom/dicomio"
+	"github.com/NikolaiKovalenko/go-dicom/dicomio"
 	"github.com/NikolaiKovalenko/go-netdicom/dimse"
 )
 

@@ -3,10 +3,10 @@ package main
 
 import (
 	"flag"
+	"github.com/NikolaiKovalenko/go-dicom"
 	"log"
 
-	"github.com/grailbio/go-dicom"
-	"github.com/grailbio/go-dicom/dicomtag"
+	"github.com/NikolaiKovalenko/go-dicom/dicomtag"
 	"github.com/NikolaiKovalenko/go-netdicom"
 	"github.com/NikolaiKovalenko/go-netdicom/dimse"
 	"github.com/NikolaiKovalenko/go-netdicom/sopclass"

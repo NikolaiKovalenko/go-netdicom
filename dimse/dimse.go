@@ -10,12 +10,12 @@ package dimse
 import (
 	"encoding/binary"
 	"fmt"
+	"github.com/NikolaiKovalenko/go-dicom"
+	"github.com/NikolaiKovalenko/go-dicom/dicomio"
+	"github.com/NikolaiKovalenko/go-dicom/dicomlog"
+	"github.com/NikolaiKovalenko/go-dicom/dicomtag"
 	"sort"
 
-	dicom "github.com/grailbio/go-dicom"
-	"github.com/grailbio/go-dicom/dicomio"
-	"github.com/grailbio/go-dicom/dicomlog"
-	"github.com/grailbio/go-dicom/dicomtag"
 	"github.com/NikolaiKovalenko/go-netdicom/pdu"
 )
 

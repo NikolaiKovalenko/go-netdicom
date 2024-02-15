@@ -2,10 +2,10 @@ package fuzze2e
 
 import (
 	"flag"
+	"github.com/NikolaiKovalenko/go-dicom"
 	"log"
 	"net"
 
-	"github.com/grailbio/go-dicom"
 	"github.com/NikolaiKovalenko/go-netdicom"
 	"github.com/NikolaiKovalenko/go-netdicom/dimse"
 	"github.com/NikolaiKovalenko/go-netdicom/sopclass"

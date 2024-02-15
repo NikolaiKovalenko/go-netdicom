@@ -5,11 +5,11 @@ package netdicom
 import (
 	"crypto/tls"
 	"fmt"
+	"github.com/NikolaiKovalenko/go-dicom"
+	"github.com/NikolaiKovalenko/go-dicom/dicomio"
+	"github.com/NikolaiKovalenko/go-dicom/dicomlog"
 	"net"
 
-	dicom "github.com/grailbio/go-dicom"
-	"github.com/grailbio/go-dicom/dicomio"
-	"github.com/grailbio/go-dicom/dicomlog"
 	"github.com/NikolaiKovalenko/go-netdicom/dimse"
 	"github.com/NikolaiKovalenko/go-netdicom/sopclass"
 )
