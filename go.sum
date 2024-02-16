@@ -1,5 +1,5 @@
-github.com/NikolaiKovalenko/go-dicom v0.0.9 h1:ZISlBwShTR89JSxP8FMpgpR6G4sACaW/PBPctJow3MI=
-github.com/NikolaiKovalenko/go-dicom v0.0.9/go.mod h1:ZyrbZv3HfQHytJsFNb/cesx3YyLPAfawWe451/Y+dTU=
+github.com/NikolaiKovalenko/go-dicom v0.0.10 h1:5BKqR/NAbBLFCvLTIlmypf++VXI7K04uJ9lUUn8/okA=
+github.com/NikolaiKovalenko/go-dicom v0.0.10/go.mod h1:ZyrbZv3HfQHytJsFNb/cesx3YyLPAfawWe451/Y+dTU=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
